@@ -52,7 +52,7 @@ export default class PackageUtilities {
     const globOpts = {
       cwd: rootPath,
       strict: true,
-      absolute: true,
+      realpath: true,
     };
 
     const hasNodeModules = packageConfigs.some((cfg) => cfg.indexOf("node_modules") > -1);
